@@ -41,7 +41,13 @@ export SERPAPI_KEY=your_secret_key_here
 
 ### Step 1: Database Setup
 You can run the PostgreSQL database using the provided docker-compose.yml file in the root directory:
+```bash
 docker-compose up -d
+```
+or
+```bash
+docker compose up -d
+```
 
 Note: The backend and scraper modules expect environment variables for the database credentials. If not provided, they fall back to your custom local settings (localhost:5439, db: salons_db, user: db_user).
 
