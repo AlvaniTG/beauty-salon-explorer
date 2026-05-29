@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+    postgres:
+        image: postgres:18-alpine
+        container_name: beauty_salons_db
+        environment:
+            POSTGRES_DB: salons_db
+            POSTGRES_USER: db_user
+            POSTGRES_PASSWORD: db_password
+        ports:
+            - "5439:5432"
+        volumes:
+            - pgdata:/var/lib/postgres
+
+volumes:
+    pgdata:

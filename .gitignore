@@ -1,0 +1,19 @@
+# --- OGÓLNE ---
+.idea/
+*.iml
+*.log
+.DS_Store
+
+# --- BACKEND & DATA (Spring Boot / Maven) ---
+**/target/
+**/*.class
+
+# --- FRONTEND (React / Node.js) ---
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/.local
+
+.env
+.env.local
+.env.*.local
