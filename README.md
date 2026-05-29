@@ -64,6 +64,7 @@ export SERPAPI_KEY=your_secret_key_here
 ```
 3. Run the scraper:
 ```Bash
+chmod +x mvnw
 ./mvnw compile exec:java -Dexec.mainClass="me.jorlowski.SalonScraper"
 ```
 This process will scrape salon data from Google Maps, enrich it with district information via Nominatim, and persist it into the PostgreSQL database using Flyway migrations.
@@ -73,6 +74,7 @@ Navigate to the backend directory and start the Spring Boot application using th
 
 ```bash
 cd beauty-backend
+chmod +x mvnw
 ./mvnw spring-boot:run
 ```
 
